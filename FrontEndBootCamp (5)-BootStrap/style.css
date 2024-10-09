@@ -1,0 +1,35 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+body::before{
+    display: block;
+    content: "";
+    height: 60px;
+}
+@media screen and (min-width:768px) {
+    .news-input{
+        width: 50%;
+    }
+}
+.alert{
+    position: fixed ;
+    top: 70px;
+    right: 20px;
+}
+@media screen and (max-width:768px) {
+    .alert{
+        position: fixed ;
+        top: 70px;
+        right: 0px;
+        z-index: 22;
+    }
+}
+
+.color-social{
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.color-social:hover{
+    color: #0d6efd;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      body {
+        color: white;
+      }
+    </style>
+  </head>
+  <body style="background-color: blueviolet">
+    <form action="post">
+      <fieldset style="background-color: brown; width: 1300; height: 635">
+        <legend style="background-color: orange">Personal Data</legend>
+        <br />
+        <fieldset style="background-color: olive">
+          <legend style="background-color: blue">
+            <br />Your Name<br /><br />
+          </legend>
+          <br />
+          <table>
+            <tbody>
+              <tr>
+                <td><label for="fname">First Name :</label></td>
+                <td><input type="text" id="fname" name="fname" /></td>
+              </tr>
+              <tr>
+                <td><label for="lname">Last Name :</label></td>
+                <td><input type="text" id="lname" name="lname" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <br />
+        <br />
+        <fieldset style="border: 0">
+          <table>
+            <tbody>
+              <tr>
+                <td><label for="phone">Phone :</label></td>
+                <td><input type="number" id="phone" name="phone" /></td>
+              </tr>
+              <tr>
+                <td><label for="email">E-mail :</label></td>
+                <td><input type="email" id="email" name="email" /></td>
+              </tr>
+              <tr>
+                <td><label for="password">Password :</label></td>
+                <td><input type="password" id="password" name="password" /></td>
+              </tr>
+              <tr>
+                <td><label for="repassword">Re-Password :</label></td>
+                <td>
+                  <input type="password" id="repassword" name="repassword" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <br />
+        <fieldset style="border: 0">
+          <table>
+            <tbody>
+              <tr>
+                <td><label for="male">Male :</label></td>
+                <td><input type="radio" name="sex" id="male" /></td>
+              </tr>
+              <tr>
+                <td><label for="female">Female :</label></td>
+                <td><input type="radio" name="sex" id="female" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <br />
+        <fieldset style="border: 0">
+          <table>
+            <tbody>
+              <tr>
+                <td><label for="student">Student :</label></td>
+                <td><input type="radio" name="gender" id="student" /></td>
+              </tr>
+              <tr>
+                <td><label for="`graduated">Graduated :</label></td>
+                <td><input type="radio" name="gender" id="graduated" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <fieldset style="border: 0">
+          <table>
+            <tbody>
+              <td>
+                <select name="usercar" id="">
+                  <optgroup label="KIA">
+                    <option value="sportage">Sportage</option>
+                    <option value="Cerato">Cerato</option>
+                  </optgroup>
+                  <optgroup label="BMW">
+                    <option value="320">320</option>
+                    <option value="340">340</option>
+                  </optgroup>
+                </select>
+              </td>
+            </tbody>
+          </table>
+        </fieldset>
+        <fieldset style="border: 0">
+          <button type="submit">Submit</button>
+        </fieldset>
+      </fieldset>
+    </form>
+  </body>
+</html>
