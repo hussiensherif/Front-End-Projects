@@ -10,12 +10,11 @@ function App() {
 
   // **-------STATE--------**
   const [isOpen, setIsOpen] = useState(false)
-
   
   const [product, setProduct] = useState({
     title: '',
     description: '',
-    imgURL: '',
+    imageURL: '',
     price: '',
     colors: '',
     categories: {
@@ -40,6 +39,8 @@ function App() {
       [name]: value
     })
   }
+  console.log(product);
+  
 
   // **-------RENDER--------**
   const renderProductList = productList.map(product => (<ProductCard key={product.id} product={product} />))
@@ -47,7 +48,7 @@ function App() {
   const renderFormInput = formInputsList.map((input) => (
     <div key={input.id} className='mb-2 text-sm font-medium text-gray-700 flex flex-col'>
       <label htmlFor={input.id}>{input.label}</label>
-      <input value={''} onChange={onChangeHandler} type={input.type} name={input.name} id={input.id} className='mb-2 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-md' />
+      <input value={product[input.name]} onChange={onChangeHandler} type={input.type} name={input.name} id={input.id} className='mb-2 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-md' />
     </div>));
 
   return (
